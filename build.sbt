@@ -4,7 +4,7 @@ name := "spark-testing-base"
 
 publishMavenStyle := true
 
-version := "0.10.0"
+version := "0.10.0-Neptune"
 
 sparkVersion := "2.3.1"
 
@@ -203,7 +203,8 @@ resolvers ++= Seq(
   "Typesafe repository" at "http://repo.typesafe.com/typesafe/releases/",
   "Second Typesafe repo" at "http://repo.typesafe.com/typesafe/maven-releases/",
   "Mesosphere Public Repository" at "http://downloads.mesosphere.io/maven",
-  Resolver.sonatypeRepo("public")
+  Resolver.sonatypeRepo("public"),
+  Resolver.mavenLocal
 )
 
 // publish settings

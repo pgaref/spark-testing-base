@@ -31,6 +31,7 @@ trait SparkContextProvider {
       setAppName("test").
       set("spark.ui.enabled", "false").
       set("spark.app.id", appID).
+      set("spark.sql.streaming.unsupportedOperationCheck", "false").
       set("spark.driver.host", "localhost")
   }
 
